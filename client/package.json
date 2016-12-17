@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000/",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.8.4"

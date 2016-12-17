@@ -6,7 +6,7 @@ namespace Todos {
             for(int i=0; i<5; i++) {
                 arr[i] = new Todo {
                     Name="Test " + i.ToString(),
-                    Description="Test " + i.ToString(),
+                    Description="Description of some thing that has the name Test " + i.ToString(),
                 };
             }
 
