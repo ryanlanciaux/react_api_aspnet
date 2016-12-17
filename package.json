@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "babel-node startServer.js",
-    "client": "babel-node startClient.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "./node_modules/.bin/babel-node startServer.js",
+    "client": "./node_modules/.bin/babel-node startClient.js",
+    "installClientDependencies": "./node_modules/.bin/babel-node installClientDependencies.js",
+    "installServerDependencies": "./node_modules/.bin/babel-node installServerDependencies.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "concurrently \"npm run installClientDependencies\" \"npm run installServerDependencies\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/ryanlanciaux/react_api_aspnet#readme",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "concurrently": "^3.1.0"
   }
 }

@@ -26,7 +26,7 @@ class App extends Component {
         <h1>React App + ASP.NET Core</h1>
         {
           this.state.loading ?
-            /* please don't use marquee */
+            /* please don't use marquee 😇 */
             <marquee>Loading</marquee> :
             this.state.messages.map(m =>
               <div className="card">
