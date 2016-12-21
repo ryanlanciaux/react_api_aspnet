@@ -1,6 +1,6 @@
 # React App + ASP.NET Core
 
-This application is a combination of create-react-app and a super basic ASP.NET Core API. It is very much based on [this excellent guide from Fullstack React on running create-react-app with a node api](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/).
+This application is a combination of [create-react-app](https://github.com/facebookincubator/create-react-app) and a super basic [ASP.NET Core](https://www.asp.net/core) API. It is very much based on [this excellent guide from Fullstack React on running create-react-app with a node api](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/).
 
 ## Install and run ##
 
@@ -13,7 +13,7 @@ npm start
 
 Our app structure is as follows. We install an instance of a [create-react-app](https://github.com/facebookincubator/create-react-app) under `/client`. This is basically just an application made with [create-react-app](https://github.com/facebookincubator/create-react-app).
 
-We have a dotnet core app running under `/api`. This is pretty generic and just has a couple of classes for the sake of example.
+We have a [dotnet core](https://www.asp.net/core) app running under `/api`. This is pretty generic and just has a couple of classes for the sake of example.
 
 ## How it works ##
 
