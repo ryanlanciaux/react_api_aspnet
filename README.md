@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-Navigate to localhost:3000 in your browser.
+Navigate to [localhost:3000](http://localhost:3000) in your browser.
 
 ## Basic structure ##
 
