@@ -17,7 +17,7 @@ We have a dotnet core app running under `/api`. This is pretty generic and just 
 
 ## How it works ##
 
-1. In the root directory of the application, there are a series of node modules that interact with the commands of the sub applications.
+1) In the root directory of the application, there are a series of node modules that interact with the commands of the sub applications.
 
 ```
 const cp = require('child_process');
@@ -26,7 +26,7 @@ const opts = { stdio: 'inherit', cwd: 'api', shell: true };
 cp.spawn('dotnet', ['run'], opts);
 ```
 
-2. The root package.json contains a series of node scripts for running these modules concurrently (so we can run dotnet core and the dev-server for create-react-app at the same time).
+2) The root package.json contains a series of node scripts for running these modules concurrently (so we can run dotnet core and the dev-server for create-react-app at the same time).
 
 ```
 "scripts": {
@@ -37,7 +37,7 @@ cp.spawn('dotnet', ['run'], opts);
 }
 ```
 
-3. `client/package.json` sets up a proxy to the server.
+3) `client/package.json` sets up a proxy to the server.
 
 ```
 "proxy": "http://localhost:5000/",
