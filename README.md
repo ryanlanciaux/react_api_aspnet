@@ -9,6 +9,8 @@ npm install
 npm start
 ```
 
+Navigate to localhost:3000 in your browser.
+
 ## Basic structure ##
 
 Our app structure is as follows. We install an instance of a [create-react-app](https://github.com/facebookincubator/create-react-app) under `/client`. This is basically just an application made with [create-react-app](https://github.com/facebookincubator/create-react-app).
